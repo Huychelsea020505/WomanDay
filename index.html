@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Women's Day 20/10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scene">
+    <!-- Decorative floating petals -->
+    <div class="petals" aria-hidden="true">
+      <!-- 24 petals with varied positions, sizes, durations -->
+      <span class="petal" style="--x:5%; --size:14px; --dur:12s; --delay:-1s"></span>
+      <span class="petal" style="--x:12%; --size:16px; --dur:14s; --delay:-3s"></span>
+      <span class="petal" style="--x:18%; --size:18px; --dur:15s; --delay:-6s"></span>
+      <span class="petal" style="--x:25%; --size:14px; --dur:12.5s; --delay:-4s"></span>
+      <span class="petal" style="--x:31%; --size:20px; --dur:16s; --delay:-7s"></span>
+      <span class="petal" style="--x:38%; --size:18px; --dur:13.5s; --delay:-2s"></span>
+      <span class="petal" style="--x:44%; --size:14px; --dur:12.8s; --delay:-9s"></span>
+      <span class="petal" style="--x:50%; --size:22px; --dur:17s; --delay:-4.5s"></span>
+      <span class="petal" style="--x:56%; --size:16px; --dur:12.2s; --delay:-2.6s"></span>
+      <span class="petal" style="--x:62%; --size:18px; --dur:13.8s; --delay:-0.6s"></span>
+      <span class="petal" style="--x:68%; --size:20px; --dur:15.2s; --delay:-7.2s"></span>
+      <span class="petal" style="--x:72%; --size:14px; --dur:11.8s; --delay:-5.2s"></span>
+      <span class="petal" style="--x:76%; --size:16px; --dur:15.6s; --delay:-8.2s"></span>
+      <span class="petal" style="--x:80%; --size:22px; --dur:16.6s; --delay:-2.2s"></span>
+      <span class="petal" style="--x:84%; --size:18px; --dur:14.8s; --delay:-6.8s"></span>
+      <span class="petal" style="--x:88%; --size:14px; --dur:12.1s; --delay:-3.8s"></span>
+      <span class="petal" style="--x:92%; --size:16px; --dur:13.1s; --delay:-1.8s"></span>
+      <span class="petal" style="--x:96%; --size:18px; --dur:14.1s; --delay:-9.1s"></span>
+      <span class="petal" style="--x:3%; --size:22px; --dur:16.4s; --delay:-10.1s"></span>
+      <span class="petal" style="--x:14%; --size:14px; --dur:12.6s; --delay:-5.9s"></span>
+      <span class="petal" style="--x:29%; --size:18px; --dur:14.4s; --delay:-4.9s"></span>
+      <span class="petal" style="--x:41%; --size:16px; --dur:13.4s; --delay:-7.9s"></span>
+      <span class="petal" style="--x:57%; --size:20px; --dur:17.4s; --delay:-6.9s"></span>
+      <span class="petal" style="--x:73%; --size:14px; --dur:11.7s; --delay:-1.3s"></span>
+    </div>
+
+    <!-- Hero card -->
+    <section class="card" role="main">
+      <h1 class="heading">Chúc mừng ngày phụ nữ 20/10</h1>
+      <p class="sub">🌸 Chúc Chị em luôn được bao quanh bởi tình yêu, niềm vui và muôn hoa rực rỡ hôm nay và mãi mãi!</p>
+      <p class="message">
+        💖 Gửi đến tất cả những người phụ nữ tuyệt vời: chính nụ cười, sự dịu dàng và trái tim ấm áp của các bạn khiến thế giới này thêm lung linh.
+      </p>
+      <div class="cta">
+        <button class="btn" onclick="burstHearts()">Gửi tình yêu ❤</button>
+        <button class="btn" onclick="togglePetals()">Bật/Tắt🌸</button>
+      </div>
+
+      <!-- Decorative SVG flowers around the card -->
+      <div class="flowers" aria-hidden="true">
+        <svg class="flower" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="g1" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#fff0f6"/>
+              <stop offset="70%" stop-color="#ffb5d6"/>
+              <stop offset="100%" stop-color="#ff8fbd"/>
+            </radialGradient>
+          </defs>
+          <g opacity="0.9">
+            <ellipse cx="50" cy="22" rx="16" ry="22" fill="url(#g1)"/>
+            <ellipse cx="50" cy="78" rx="16" ry="22" fill="url(#g1)"/>
+            <ellipse cx="22" cy="50" rx="22" ry="16" fill="url(#g1)"/>
+            <ellipse cx="78" cy="50" rx="22" ry="16" fill="url(#g1)"/>
+            <ellipse cx="30" cy="30" rx="18" ry="12" fill="url(#g1)"/>
+            <ellipse cx="70" cy="30" rx="18" ry="12" fill="url(#g1)"/>
+            <circle cx="50" cy="50" r="10" fill="#ff5c93"/>
+          </g>
+        </svg>
+
+        <svg class="flower" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="g2" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#fff0f6"/>
+              <stop offset="70%" stop-color="#ffc1df"/>
+              <stop offset="100%" stop-color="#ff9fba"/>
+            </radialGradient>
+          </defs>
+          <g opacity="0.8">
+            <ellipse cx="50" cy="18" rx="12" ry="20" fill="url(#g2)"/>
+            <ellipse cx="50" cy="82" rx="12" ry="20" fill="url(#g2)"/>
+            <ellipse cx="18" cy="50" rx="20" ry="12" fill="url(#g2)"/>
+            <ellipse cx="82" cy="50" rx="20" ry="12" fill="url(#g2)"/>
+            <circle cx="50" cy="50" r="9" fill="#ff7aa5"/>
+          </g>
+        </svg>
+
+        <svg class="flower" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="g3" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#fff0f6"/>
+              <stop offset="70%" stop-color="#ffd1e8"/>
+              <stop offset="100%" stop-color="#ffb5d6"/>
+            </radialGradient>
+          </defs>
+          <g opacity="0.75">
+            <ellipse cx="50" cy="20" rx="14" ry="22" fill="url(#g3)"/>
+            <ellipse cx="50" cy="80" rx="14" ry="22" fill="url(#g3)"/>
+            <ellipse cx="20" cy="50" rx="22" ry="14" fill="url(#g3)"/>
+            <ellipse cx="80" cy="50" rx="22" ry="14" fill="url(#g3)"/>
+            <circle cx="50" cy="50" r="8" fill="#ff69a6"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <footer>✨ Chúc ngày hôm nay của bạn ngọt ngào như kẹo, rực rỡ như nắng, và đầy ắp những khoảnh khắc khiến tim mỉm cười. 🌷</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
